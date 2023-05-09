@@ -1,5 +1,6 @@
+import numpy as np
+
 def Performance(kd, kr, discrep):
-    import numpy as np
 
     elo_multi = 2/(1+np.exp(-2.5*discrep/1000))
     avg_kr = 0.72

@@ -1,12 +1,12 @@
 import requests
-from creds import headers
+from scripts.creds import headers
 import numpy as np
 
 match_ids = []
 outcomes = [] # 0 means team 1 wins, 1 means team 2 wins
 start_time = []
 
-start_id = '1-406c02ee-ac0d-443d-a288-5d99feca0e4d'
+start_id = '1-d71dc4bf-dfc2-4c07-979b-22581d04ce73'
 current_match = start_id
 match_count = 0
 doofus_count = 0
@@ -54,5 +54,5 @@ while len(match_ids) < 1e3:
             print(counter)
         counter += 1
 
-    print('We have gathered data from ',match_count, 'matches')
+    print('We have gathered data from ', match_count, 'matches')
 

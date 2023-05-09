@@ -1,6 +1,8 @@
+import requests
+from scripts.creds import headers
+
 def lobby_info(match_id):
-    import requests
-    from creds import headers
+
 
     current_match = requests.get('https://open.faceit.com/data/v4/matches/{}'.format(match_id), headers=headers).json()
     start_time = current_match['configured_at']

@@ -1,6 +1,8 @@
+import requests
+from scripts.creds import headers
+
 def elo_discrep(all_stats,p_team,p_elo):
-    import requests
-    from creds import headers
+
 
     enemy_elo = 0
 

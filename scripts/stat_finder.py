@@ -1,9 +1,10 @@
+import requests
+from scripts.creds import headers
+from scripts.Elo_Discrep import elo_discrep
+from scripts.Performance_Calc import Performance
+import numpy as np
+
 def stat_finder(history, nick):
-    import requests
-    from creds import headers
-    from Elo_Discrep import elo_discrep
-    from Performance_Calc import Performance
-    import numpy as np
 
     tot_k = 0
     tot_d = 0

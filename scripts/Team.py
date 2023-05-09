@@ -1,7 +1,9 @@
+import numpy as np
+from scripts.Lobby import lobby_info
+from scripts.Session_Stats import session
+
 def team_info(match_id):
-    import numpy as np
-    from Lobby import lobby_info
-    from Session_Stats import session
+
     all_p_ids, all_g_ids, all_nicks, configured_time = lobby_info(match_id)
 
     lobby_ses_dat = []
